@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Space+Mono&family=Urbanist:wght@200;300;600&display=swap');
+
+
+
+body {
+  background: #F9F9F9;
+  font-family: 'Ubanist', sans-serif;
+  line-height: 30px;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  color: rgb(246, 241, 241);
+}
+h1 {
+color: #FB2576;
+font-weight: 600;
+font-size: 48px;
+}
+p {
+  color: #4C0027;
+  font-weight: 100;
+  font-size: 16px;
+}
+h2 {
+color: #FB2576;
+font-weight: 200;
+}
+img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card-white {
+  background-color: #FFB9B9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px #FF74B1;
+  width: 70%;
+  margin: 24px auto;
+  padding: 32px;
+  text-align: center;
+}
+.fa-brands {
+  color: #EA047E;
+  font-size: 40px;
+  transition: 0.3s;
+}
+.fa-brands:hover {
+  color: #0a0909;
+}
+.btn-color {
+  background-color: #FB2576;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #0a0909;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 150px;
+}
+li {
+  list-style: none;
+  display: inline;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+}
+.btn-one {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-one::before {
+  position: absolute;
+  top: 0;
+  left: 0,5;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.3s;
+}
+.btn-one:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.5);
+  transform: scale(1.2,1.2);
+}
+.btn-one:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
